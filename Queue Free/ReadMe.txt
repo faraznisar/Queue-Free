@@ -1,0 +1,1 @@
+1. In dbo.Admin_Login set RoleType as "Admin".

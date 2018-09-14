@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student.master.cs" Inherits="Queue_Free.Student.Student" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+ <script src="../JS/jquery-1.11.2.js"></script>
+    <script src="../bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <link href="../bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/Styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="Navpadding Content-Background-Image">
+    <form id="form1" runat="server">
+        <%--header--%>
+
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand QueueFree" href="Index.aspx">Queue Free</a>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="Pay_Fee.aspx">Pay Fee</a></li>  
+                        <li class="active"><a href="Fee_History.aspx">Fee History</a></li>
+                        <li class="active"><asp:LinkButton Text="LogOut" ID="lbLogOut" OnClick="lbLogOut_Click" runat="server" /></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+
+
+        <%--  <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid navbar-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarcollapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">Fee Payment</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="Pay Fee.aspx">Pay Fee</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.aspx">Log in</a></li>
+                </ul>
+            </div>
+        </nav>--%>
+        <%-- <nav class="navbar navbar-inverse <%--navbar-fixed-top--%>">
+           <%-- <div class="container-fluid navbar-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarcollapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">Fee Payment</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="Pay Fee.aspx">Pay Fee</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.aspx">Log in</a></li>
+                </ul>
+            </div>
+        </nav>--%>
+        <%--Header--%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <%--footer--%>
+
+        <div class="row " style="background-color:#222222">
+            <div class="col-md-12">
+                <div class="text-center;" >
+                    <h6 style="color:white; padding-left:100px;">School of Engineering Technology Baba Ghulam Shah Badshah University, Rajouri.</h6>
+                    <h6 style="color:white;padding-left:100px;">185234.</h6>
+
+                </div>
+            </div>
+        </div>
+        <%--Footer--%>
+    </form>
+</body>
+</html>
